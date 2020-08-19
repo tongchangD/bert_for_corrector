@@ -1,5 +1,5 @@
 # BERT model correct error character with mask feature
-
+实在抱歉,之前做项目比较急,然后没有完全上传完文件,导致大家使用受阻,现已更新  
 ## 使用说明
 
 1. 保存预训练模型在data文件夹下
