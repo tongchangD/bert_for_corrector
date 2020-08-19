@@ -32,5 +32,14 @@ python run_lm_finetuning.py \
     --eval_data_file=$TEST_FILE \
     --mlm
     --num_train_epochs=3
-
-
+python -m run_lm_finetuning \ 
+    --bert_model bert-base-uncased \  
+    --do_lower_case \  
+    --do_train \ 
+    --train_file ./samples/sample_text.txt \ 
+    --output_dir ./samples/samples_out \ 
+    --num_train_epochs 5.0 \ 
+    --learning_rate 3e-5 \ 
+    --train_batch_size 16 \ 
+    --max_seq_length 128
+参数可根据机器设备进行删改 
