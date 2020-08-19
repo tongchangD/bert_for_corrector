@@ -20,9 +20,9 @@
 python3 bert_corrector.py
 ```
 3. 评估
-通用数据下训练的结果并不适用于垂直领域的纠错，需要重新训练
-export CUDA_VISIBLE_DEVICES=0
-python run_lm_finetuning.py \
+通用数据下训练的结果并不适用于垂直领域的纠错，需要重新训练  
+export CUDA_VISIBLE_DEVICES=0  
+python run_lm_finetuning.py \  
     --output_dir=chinese_finetuned_lm \
     --model_type=bert \
     --model_name_or_path=bert-base-chinese \
@@ -33,6 +33,7 @@ python run_lm_finetuning.py \
     --mlm
     --num_train_epochs=3  
       
+或者使用  
 python -m run_lm_finetuning \ 
     --bert_model bert-base-uncased \  
     --do_lower_case \  
