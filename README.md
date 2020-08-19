@@ -34,7 +34,7 @@ python run_lm_finetuning.py \
     --num_train_epochs=3  
       
 或者使用  
-python -m run_lm_finetuning \ 
+python -m run_lm_finetuning \  
     --bert_model bert-base-uncased \  
     --do_lower_case \  
     --do_train \ 
