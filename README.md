@@ -31,7 +31,8 @@ python run_lm_finetuning.py \
     --do_eval \
     --eval_data_file=$TEST_FILE \
     --mlm
-    --num_train_epochs=3
+    --num_train_epochs=3  
+      
 python -m run_lm_finetuning \ 
     --bert_model bert-base-uncased \  
     --do_lower_case \  
