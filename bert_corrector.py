@@ -9,7 +9,7 @@ sys.path.append('../..')
 import config
 from text_utils import is_chinese_string, convert_to_unicode
 from logger import logger
-from pycorrector.corrector import Corrector
+from corrector import Corrector
 
 
 class BertCorrector(Corrector):
