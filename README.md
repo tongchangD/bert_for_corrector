@@ -27,7 +27,7 @@ python predict_mask.py
 '''   
 4. 评估
 通用数据下训练的结果并不适用于垂直领域的纠错，需要重新训练  
-'''   
+```   
 export CUDA_VISIBLE_DEVICES=0  
 python run_lm_finetuning.py \  
     --output_dir=chinese_finetuned_lm \
@@ -39,10 +39,10 @@ python run_lm_finetuning.py \
     --eval_data_file=$TEST_FILE \
     --mlm
     --num_train_epochs=3  
-'''   
+```   
       
 或者使用  
-'''   
+```   
 python -m run_lm_finetuning \  
     --bert_model bert-base-uncased \  
     --do_lower_case \  
@@ -53,5 +53,5 @@ python -m run_lm_finetuning \
     --learning_rate 3e-5 \  
     --train_batch_size 16 \  
     --max_seq_length 128  
-'''   
+```   
 参数可根据机器设备进行删改 
