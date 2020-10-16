@@ -74,7 +74,7 @@ class BertCorrector(Corrector):
 if __name__ == "__main__":
     d = BertCorrector()
     error_sentencess = {
-        "奇石店": "起始点",
+        "满头大汉": "满头大汗",
     }
 
     for sent in error_sentencess.keys():

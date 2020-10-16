@@ -1,5 +1,7 @@
 # BERT model correct error character with mask feature
 实在抱歉,之前做项目比较急,然后没有完全上传完文件,导致大家使用受阻,现已更新  
+有人提醒缺少模型，近期空闲，特意将[bert模型](https://pan.baidu.com/s/1VIBfl0wbOIsKaO7FAfR1Zg)奉上,提取码为：hhxx 
+另外其中缺少得文件也有上传，安心食用。
 ## 使用说明
 
 1. 保存预训练模型在data文件夹下
@@ -16,11 +18,16 @@
 └── text_utils.py  
 
 2. 运行`bert_corrector.py`可以进行纠错。
-```
-python3 bert_corrector.py
-```
-3. 评估
+```   
+python bert_corrector.py   
+```   
+3. 运行'predict_mask.py' 可以直接观测用[mask] 掩盖的地方可能出现的汉字    
+'''    
+python predict_mask.py   
+'''   
+4. 评估
 通用数据下训练的结果并不适用于垂直领域的纠错，需要重新训练  
+'''   
 export CUDA_VISIBLE_DEVICES=0  
 python run_lm_finetuning.py \  
     --output_dir=chinese_finetuned_lm \
@@ -32,8 +39,10 @@ python run_lm_finetuning.py \
     --eval_data_file=$TEST_FILE \
     --mlm
     --num_train_epochs=3  
+'''   
       
 或者使用  
+'''   
 python -m run_lm_finetuning \  
     --bert_model bert-base-uncased \  
     --do_lower_case \  
@@ -44,4 +53,5 @@ python -m run_lm_finetuning \
     --learning_rate 3e-5 \  
     --train_batch_size 16 \  
     --max_seq_length 128  
+'''   
 参数可根据机器设备进行删改 
