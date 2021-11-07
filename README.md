@@ -2,7 +2,13 @@
 实在抱歉,之前做项目比较急,然后没有完全上传完文件,导致大家使用受阻,现已更新  
 有人提醒缺少模型，近期空闲，特意将[bert模型](https://pan.baidu.com/s/1VIBfl0wbOIsKaO7FAfR1Zg)奉上,提取码为：hhxx 
 另外其中缺少得文件也有上传，安心食用。
-## 使用说明
+
+# 另 实体识别纠错,ner_for_corrector
+    实体识别纠错的效果还可以，见[代码](https://github.com/tongchangD/ner_for_corrector),，详情介绍见[地址]（https://blog.csdn.net/tcd1112/article/details/107363262）   
+
+
+
+## Bert 使用说明
 
 1. 保存预训练模型在data文件夹下
 ├── data  
