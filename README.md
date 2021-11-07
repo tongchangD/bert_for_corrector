@@ -4,9 +4,7 @@
 另外其中缺少得文件也有上传，安心食用。
 
 # 另 实体识别纠错,ner_for_corrector
-    实体识别纠错的效果还可以，见[代码](https://github.com/tongchangD/ner_for_corrector),，详情介绍见[地址]（https://blog.csdn.net/tcd1112/article/details/107363262）   
-
-
+实体识别纠错的效果还可以，见[代码](https://github.com/tongchangD/ner_for_corrector),，详情介绍见[地址]（https://blog.csdn.net/tcd1112/article/details/107363262）   
 
 ## Bert 使用说明
 
