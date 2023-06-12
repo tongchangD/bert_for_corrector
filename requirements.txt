@@ -1,5 +1,5 @@
 pypinyin==0.35.3
-transformers==2.8.0
+transformers==4.30.0
 six==1.13.0
 psyco==1.6
 pycorrector==0.2.7
